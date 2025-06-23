@@ -1,0 +1,584 @@
+мой сайт 2 смена
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомастерская | Профессиональный ремонт автомобилей</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .contact-info {
+            display: flex;
+            gap: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .contact-item i {
+            color: #ff9900;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            background-color: #333;
+            border-radius: 5px;
+        }
+        
+        nav ul li {
+            position: relative;
+        }
+        
+        nav ul li a {
+            display: block;
+            padding: 15px 25px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        nav ul li a:hover {
+            background-color: #ff9900;
+            color: #1a1a1a;
+        }
+        
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://via.placeholder.com/1200x500');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ff9900;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ff9900;
+            color: #1a1a1a;
+            padding: 12px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #e68a00;
+            transform: translateY(-3px);
+        }
+        
+        .about {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 36px;
+            color: #1a1a1a;
+        }
+        
+        .section-title span {
+            color: #ff9900;
+        }
+        
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h3 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ff9900;
+        }
+        
+        .about-image {
+            flex: 1;
+        }
+        
+        .about-image img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .services {
+            padding: 80px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .service-card {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s;
+            text-align: center;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-card i {
+            font-size: 50px;
+            color: #ff9900;
+            margin-bottom: 20px;
+        }
+        
+        .service-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        .team {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .team-member {
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 5px solid #ff9900;
+        }
+        
+        .team-member h3 {
+            font-size: 22px;
+            margin-bottom: 5px;
+        }
+        
+        .team-member p.position {
+            color: #ff9900;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .team-member p.education {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        
+        .team-member p.phone {
+            color: #666;
+        }
+        
+        .contact {
+            padding: 80px 0;
+            background-color: #1a1a1a;
+            color: white;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .contact-card {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        
+        .contact-card i {
+            font-size: 40px;
+            color: #ff9900;
+            margin-bottom: 20px;
+        }
+        
+        .contact-card h3 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+        
+        .login-form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #ff9900;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 30px;
+        }
+        
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff9900;
+        }
+        
+        .footer-links ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: #ff9900;
+        }
+        
+        .copyright {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            color: #999;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="logo">
+                    <h1>Авто<span>Мастер</span></h1>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>8 (910) 345-78-86</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>automaste@mail.com</span>
+                    </div>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#achievements">Заслуги</a></li>
+                    <li><a href="#team">Студии</a></li>
+                    <li><a href="#login">Вход</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Профессиональный ремонт автомобилей</h1>
+                <p>Мы предлагаем полный спектр услуг по ремонту и обслуживанию автомобилей любых марок. Наши специалисты с многолетним опытом работы гарантируют качественное выполнение работ.</p>
+                <a href="#contact" class="btn">Записаться на сервис</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">О <span>нас</span></h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Наша история</h3>
+                    <p> Всё началось с маленького гаража в Казани, где два друга — механик Давид и автомечтатель Михаил — решили открыть свою мастерскую.У них была вера в то что они смогут достичь высот в своем деле.В 2010 году в сервис приехал владелец разбитой BMW. После качественного кузовного ремонта он написал восторженный отзыв в интернете — и поток клиентов вырос в разы. Тогда мастерская переехала в просторный цех, закупила современное оборудование и получила первый официальный сертификат</p>
+                    <p>Теперь «Автомастер» — это: 
+                        ✔ Команда из 15 мастеров-профессионалов.
+                        ✔ Собственная лаборатория диагностики с компьютеризированными стендами.
+                        ✔ Тысячи довольных клиентов, которые возвращаются снова и советуют нас друзьям.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Наша автомастерская">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Наши <span>услуги</span></h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Диагностика</h3>
+                    <p>Полная компьютерная диагностика всех систем автомобиля для выявления неисправностей.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Ремонт двигателя</h3>
+                    <p>Капитальный и текущий ремонт двигателей любой сложности с гарантией качества.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-oil-can"></i>
+                    <h3>Техническое обслуживание</h3>
+                    <p>Регулярное ТО согласно регламенту производителя с использованием оригинальных запчастей.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-paint-roller"></i>
+                    <h3>Кузовной ремонт</h3>
+                    <p>Профессиональный кузовной ремонт и покраска с использованием современных материалов.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Электрика</h3>
+                    <p>Ремонт и диагностика электронных систем автомобиля, проводки и бортового оборудования.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tire"></i>
+                    <h3>Шиномонтаж</h3>
+                    <p>Полный комплекс услуг по шиномонтажу, балансировке и хранению колес.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements" id="achievements">
+        <div class="container">
+            <h2 class="section-title">Наши <span>заслуги</span></h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://via.placeholder.com/600x400" alt="Наши награды">
+                </div>
+                <div class="about-text">
+                    <h3>Награды и сертификаты</h3>
+                    <p>Мы получили награду "Лучший автосервис 2023" по версии городской ассоциации автомобилистов. Все мастера имеют международные сертификаты по диагностике и ремонту двигателей.Наш сервис отмечен знаком качества "ТОП-10 Казани" за скорость и надёжность.</p>
+                    <p>Ваш автомобиль в надёжных руках.</p>
+                    <p>г. Казань, ул. Автомобильная, дом 29</p>
+                    <p>1 Мая 2025г</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team" id="team">
+        <div class="container">
+            <h2 class="section-title">Наша <span>команда</span></h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Главный директор">
+                    <h3>М.А. Родионов</h3>
+                    <p class="position">Главный Директор</p>
+                    <p class="education">Образование высшее - магистр</p>
+                    <p>Окончил факультет психологии</p>
+                    <p class="phone">Телефон: 1-960-***-****</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Зам. директора">
+                    <h3>Д.М. Галстян</h3>
+                    <p class="position">Зам. Директора</p>
+                    <p class="education">Образование высшее - доктор наук</p>
+                    <p>Окончил факультет менеджмента</p>
+                    <p class="phone">Телефон: 3-990-***-****</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://via.placeholder.com/150" alt="Помощник секретаря">
+                    <h3>Д.О. Американкова</h3>
+                    <p class="position">Помощник секретаря</p>
+                    <p class="education">Образование высшее - специалист</p>
+                    <p>Окончил факультет документоведения</p>
+                    <p class="phone">Телефон: 3-960-***-****</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Наши <span>контакты</span></h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Адрес</h3>
+                    <p>г. Казань, ул. Автомобильная, дом 4</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Телефон</h3>
+                    <p>8 (910) 345-78-86</p>
+                    <p>Контакт: Р9 (04457886)</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>automaste@mail.com</p>
+                    <p>Почта: Aedul@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="login" id="login">
+        <div class="container">
+            <div class="login-form">
+                <h2>Вход в систему</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Введите ваш email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Пароль</label>
+                        <input type="password" id="password" placeholder="Введите ваш пароль">
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="btn">Войти</button>
+                        <a href="#register" class="btn">Регистрация</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">Авто<span>Мастер</span></div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">Главная</a></li>
+                        <li><a href="#about">О нас</a></li>
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#achievements">Заслуги</a></li>
+                        <li><a href="#team">Студии</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Автомастерская. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
