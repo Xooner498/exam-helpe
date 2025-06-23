@@ -1,0 +1,758 @@
+сайт давида:
+Bekey, [23.06.2025 22:22]
+САЙЙЙЙЙЙТТТ!!!!!!!!!!!!!!!!!
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тату Студия</title>
+  <style>
+    body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 26px;
+}
+.nav-menu a, .auth-links a {
+  font-size: 16px;
+}
+.modal-content input,
+.modal-content button {
+  font-size: 16px;
+}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #181818;
+      color: #f0f0f0;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px 0;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-menu a, .auth-links a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .nav-menu a:hover, .auth-links a:hover {
+      background: #ff4c4c;
+    }
+    .auth-links {
+      font-size: 14px;
+    }
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #1f1f1f;
+      font-size: 14px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.6);
+      z-index: 1000;
+    }
+    .modal-content {
+      background: #2a2a2a;
+      margin: 10% auto;
+      padding: 25px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 10px;
+      position: relative;
+    }
+    .modal-content h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+    .modal-content input, .modal-content button {
+      width: 100%;
+      margin: 10px 0;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    .modal-content input {
+      background: #3a3a3a;
+      color: white;
+    }
+    .modal-content button {
+      background: #ff4c4c;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .modal-content button:hover {
+      background: #e03333;
+    }
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: #fff;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .team {
+      text-align: center;
+      padding: 40px 0;
+    }
+    .team-container {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .team-member {
+      background: #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 0 10px rgba(255,76,76,0.2);
+    }
+    .team-member img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .team-member h3 {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      color: #ff4c4c;
+    }
+    .team-member p {
+      margin: 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <h1>Чернильный мир</h1>
+    <ul class="nav-menu">
+      <li><a href="Сайт.html">Главная</a></li>
+      <li><a href="о нас.html">О нас</a></li>
+      <li><a href="услуги.html">Услуги</a></li>
+      <li><a href="#">Портфолио</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <div class="auth-links">
+      <a href="#" onclick="openModal('loginModal')">Вход</a> |
+      <a href="#" onclick="openModal('registerModal')">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+Bekey, [23.06.2025 22:22]
+<main>
+  <section class="team">
+    <h2>Наша команда</h2>
+    <div class="team-container">
+      <div class="team-member">
+        <img src="c:\Users\Puck\Downloads\den-generalnogo-direktora-960-540-960x540.jpg" alt="Главный директор">
+        <h3>Главный директор</h3>
+        <p>С.А. Григорьев</p>
+      </div>
+      <div class="team-member">
+        <img src="c:\Users\Puck\Downloads\sitnikov.jpg" alt="Заместитель директора">
+        <h3>Заместитель директора</h3>
+        <p>П.Н. Либовский</p>
+      </div>
+      <div class="team-member">
+        <img src="c:\Users\Puck\Downloads\1681430742_kartinki-pibig-info-p-kartinka-generalnii-direktor-arti-instagra-30.jpg" alt="Помощник секретаря">
+        <h3>Помощник секретаря</h3>
+        <p>Д.С. Дунаевская</p>
+      </div>
+    </div>
+    </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Тату Студия "Чернильный мир"</p>
+</footer>
+
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('loginModal')">&times;</span>
+    <h2>Вход</h2>
+    <form>
+      <input type="text" placeholder="Логин" required>
+      <input type="password" placeholder="Пароль" required>
+      <button type="submit">Войти</button>
+    </form>
+  </div>
+</div>
+
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('registerModal')">&times;</span>
+    <h2>Регистрация</h2>
+    <form>
+      <input type="text" placeholder="Имя" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Пароль" required>
+      <button type="submit">Зарегистрироваться</button>
+    </form>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+  window.onclick = e => {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+    }
+  };
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+О НАААААС!!!!!!!!!!!!!!!
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас - Чернильный мир</title>
+  <style>
+    body {
+  font-size: 18px;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 32px;
+}
+h2 {
+  font-size: 26px;
+}
+.nav-menu a, .auth-links a {
+  font-size: 16px;
+}
+.modal-content input,
+.modal-content button {
+  font-size: 16px;
+}
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #181818;
+      color: #f0f0f0;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px 0;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-menu a, .auth-links a {
+      color: white;
+      text-decoration: none;
+      padding: 6px 10px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .nav-menu a:hover, .auth-links a:hover {
+      background: #ff4c4c;
+    }
+    .auth-links {
+      font-size: 14px;
+    }
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #1f1f1f;
+      font-size: 14px;
+    }
+    .about-section {
+      background: #2a2a2a;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(255,76,76,0.2);
+    }
+    .about-section h2 {
+      color: #ff4c4c;
+      margin-top: 0;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+Bekey, [23.06.2025 22:22]
+/* Модальные окна */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .modal-content {
+      background-color: #2a2a2a;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 400px;
+      color: #fff;
+      box-shadow: 0 0 10px rgba(255,76,76,0.3);
+    }
+
+    .modal-content h3 {
+      margin-top: 0;
+      color: #ff4c4c;
+    }
+
+    .modal-content input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .modal-content button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4c4c;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .modal-content button:hover {
+      background-color: #e03c3c;
+    }
+
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 24px;
+      cursor: pointer;
+    }
+    .close:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <h1>Чернильный мир</h1>
+    <ul class="nav-menu">
+      <li><a href="Сайт.html">Главная</a></li>
+      <li><a href="о нас.html">О нас</a></li>
+      <li><a href="услуги.html">Услуги</a></li>
+      <li><a href="#">Портфолио</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <div class="auth-links">
+      <a href="#" onclick="openModal('loginModal')">Вход</a> |
+      <a href="#" onclick="openModal('registerModal')">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="about-section">
+    <h2>О нашей студии</h2>
+    <p>Студия "Чернильный мир" - это место, где искусство встречается с индивидуальностью. Мы работаем с 2010 года и за это время создали тысячи уникальных татуировок для наших клиентов.</p>
+    <p>Наши мастера - профессионалы с многолетним опытом, участники международных конвенций и победители конкурсов тату-искусства.</p>
+  </section>
+
+  <section class="about-section">
+    <h2>Наши принципы</h2>
+    <ul>
+      <li>Стерильность и безопасность - мы используем только одноразовые материалы</li>
+      <li>Индивидуальный подход к каждому клиенту</li>
+      <li>Гарантия качества работы</li>
+      <li>Консультация перед нанесением татуировки</li>
+    </ul>
+  </section>
+
+  <section class="about-section">
+    <h2>Наши работы</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200" alt="Татуировка 1">
+      <div class="gallery">
+  <video width="300" height="200" controls>
+    <source src="video1.mp4" type="video/mp4">
+  </video>
+      <img src="https://via.placeholder.com/300x200" alt="Татуировка 3">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Тату Студия "Чернильный мир"</p>
+</footer>
+
+<!-- Модальное окно входа -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('loginModal')">&times;</span>
+    <h3>Вход</h3>
+    <input type="text" placeholder="Логин">
+    <input type="password" placeholder="Пароль">
+    <button>Войти</button>
+  </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('registerModal')">&times;</span>
+    <h3>Регистрация</h3>
+    <input type="text" placeholder="Имя пользователя">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Пароль">
+    <button>Зарегистрироваться</button>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+  window.onclick = e => {
+    if (e.target.classList.contains('modal')) {
+      e.target.style.display = 'none';
+    }
+  };
+</script>
+
+</body>
+</html>
+
+Bekey, [23.06.2025 22:22]
+УСЛУУУУУГИ!!!!!
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги - Чернильный мир</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #181818;
+      color: #f0f0f0;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    header {
+      background: #1f1f1f;
+      padding: 20px 0;
+    }
+    .header-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    h1 {
+      font-size: 28px;
+      margin: 0;
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    .nav-menu a, .auth-links a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+      font-size: 16px;
+    }
+    .nav-menu a:hover, .auth-links a:hover {
+      background: #ff4c4c;
+    }
+    .auth-links {
+      font-size: 16px;
+    }
+    main {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background: #1f1f1f;
+      font-size: 16px;
+    }
+    .services-section {
+      background: #2a2a2a;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 0 10px rgba(255,76,76,0.2);
+    }
+    .services-section h2 {
+      color: #ff4c4c;
+      margin-top: 0;
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    .service-category {
+      margin-bottom: 30px;
+      border-bottom: 1px solid #444;
+      padding-bottom: 20px;
+    }
+    .service-category:last-child {
+      border-bottom: none;
+    }
+    .service-category h3 {
+      color: #ff4c4c;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    .service-category p {
+      margin-left: 30px;
+      font-size: 16px;
+    }
+    .price-label {
+      background: #ff4c4c;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: 16px;
+      margin-left: 10px;
+    }
+
+    /* Стили для модальных окон */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.6);
+    }
+
+    .modal-content {
+      background-color: #2a2a2a;
+      margin: 10% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 8px;
+      color: #fff;
+      position: relative;
+    }
+
+    .modal-content input, .modal-content button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .modal-content button {
+      background: #ff4c4c;
+      color: white;
+      cursor: pointer;
+    }
+
+    .modal-content button:hover {
+      background: #e63c3c;
+    }
+
+    .close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 22px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-container">
+    <h1>Чернильный мир</h1>
+    <ul class="nav-menu">
+      <li><a href="Сайт.html">Главная</a></li>
+      <li><a href="о нас.html">О нас</a></li>
+      <li><a href="услуги.html">Услуги</a></li>
+      <li><a href="#">Портфолио</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+    <div class="auth-links">
+      <a href="#" onclick="openModal('loginModal')">Вход</a> |
+      <a href="#" onclick="openModal('registerModal')">Регистрация</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="services-section">
+    <h2>Наши услуги</h2>
+
+    <div class="service-category">
+      <h3>Татуировка <span class="price-label">от 3000₽</span></h3>
+      <p>Разработка эскиза, подбор стиля, индивидуальная работа с мастером.</p>
+    </div>
+
+Bekey, [23.06.2025 22:22]
+<div class="service-category">
+      <h3>Коррекция тату <span class="price-label">от 2000₽</span></h3>
+      <p>Обновление цвета, перекрытие старых татуировок и работа с рубцами.</p>
+    </div>
+
+    <div class="service-category">
+      <h3>Удаление тату <span class="price-label">от 2500₽</span></h3>
+      <p>Лазерное удаление с минимальным риском повреждения кожи.</p>
+    </div>
+
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Тату Студия "Чернильный мир"</p>
+</footer>
+
+<!-- Модальное окно входа -->
+<div id="loginModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('loginModal')">&times;</span>
+    <h2>Вход</h2>
+    <input type="text" placeholder="Логин">
+    <input type="password" placeholder="Пароль">
+    <button>Войти</button>
+  </div>
+</div>
+
+<!-- Модальное окно регистрации -->
+<div id="registerModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal('registerModal')">&times;</span>
+    <h2>Регистрация</h2>
+    <input type="text" placeholder="Имя пользователя">
+    <input type="email" placeholder="Email">
+    <input type="password" placeholder="Пароль">
+    <button>Зарегистрироваться</button>
+  </div>
+</div>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).style.display = "block";
+  }
+  function closeModal(id) {
+    document.getElementById(id).style.display = "none";
+  }
+
+  window.onclick = function(event) {
+    if (event.target.classList.contains('modal')) {
+      event.target.style.display = "none";
+    }
+  };
+</script>
+
+</body>
+</html>
